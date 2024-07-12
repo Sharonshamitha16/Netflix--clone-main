@@ -345,3 +345,28 @@ nav{
             font-size: 22px;
         }
    }
+
+
+
+
+/* signup pg css */
+
+   .regform{
+    width: 350px;
+    margin: 70px 300px 75px 400px;
+    /* top right bottom left */
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding:10px 20px 30px; 
+    font-size: 20px;
+    border-radius: 10px;
+}
+.regform h3{
+    color: #789de2;
+    text-align: center;
+
+}
+
+.regform .textlabel{
+    display: block;
+}
