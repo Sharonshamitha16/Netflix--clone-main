@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Header and Navigation */
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    max-height: 40px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li {
+    margin-right: 20px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-right .icon,
+.header .nav-right .profile {
+    margin-left: 20px;
+}
+
+/* MyList Styling */
+.MyList h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Image Grid */
+.firstline, .secondline, .thirdline {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.firstline img, .secondline img, .thirdline img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
+}

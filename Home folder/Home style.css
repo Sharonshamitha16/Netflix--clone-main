@@ -1,0 +1,407 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Footer icons */
+:root {
+    --primary: #141414;
+    --light: #F3F3F3;
+    --dark: 	#686868;
+}
+
+
+  
+body{
+    background: #000;
+    color: #fff;
+}
+
+
+.header{
+    width:100%;
+    height:10vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),url(Assets/images/header-image.png) ;
+    background-size: cover;
+    background-position:center;
+    padding: 10px 5%;
+    position: relative;
+    border-top: 2px solid black;
+}   
+
+nav{
+    width: 100%;
+    display:flex;
+    align-items: start  ;
+    padding: 10px 0; 
+    position: fixed;  
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+
+
+/* -- <script> -- */
+
+
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+ul{
+    display: flex;
+    
+
+}
+
+li a {
+    color: rgb(231, 229, 229);
+    padding-left: 20px;
+    font-size: small;
+}
+
+li a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.nav-right{   
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 270px;
+    cursor: pointer;
+}
+.profile{
+    border-radius: 5px;
+}
+
+.dropdown{
+    padding: 10px;
+}
+.sign-out{
+    display: none;
+}
+
+.dropdown:hover .sign-out{
+    display: block;
+    
+}
+
+
+/* -- banner style -- */
+
+.banner{
+    background-image: url(banner/banner.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 450px;
+
+}
+
+.banner-contents{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+    position: sticky;
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner-description{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 180;
+}
+
+
+.banner-button{
+    display: inline;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51,51,51,0.5);
+}
+
+.banner-button:hover{
+    color: #000;
+    transition: all 0.25;
+}
+
+.banner-fadebottom{
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61),#111);
+}
+/* ---------search tag used -
+----------- */
+.search-container {
+    margin-left: auto;
+    display: flex;
+    /* for alignment */
+    align-items: center;
+    /* makes the text box at center */
+    position: relative;
+}
+
+.search-icon {
+    background: none;
+    /* gives u no background transparent bg */
+    border: none;
+    cursor: pointer;
+}
+
+#search-input {
+    width: 0;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    /*border-radius: 5px;*/
+    position: absolute;
+    right: 0;
+    transform-origin: right center;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.search-container:focus-within #search-input {
+    width: 200px;
+    opacity: 0.5;
+    cursor:text;
+    color: white;
+    opacity: 0.8;
+}
+
+
+/* MAIN CONTIANER */
+
+.top{
+    padding-top: 5px;
+}
+
+h1 {
+    padding-top: 60px;  
+    padding-bottom: 30px;
+  }
+
+img {
+    max-width: 100%;
+  }
+
+.main-container {
+    padding: 50px;
+  }
+  
+  .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+  }
+  
+  .box a {
+    transition: transform .3s;  
+  }
+  
+  .box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);  
+    transform: scale(1.4);
+  }
+  
+  .box img {
+    border-radius: 2px;
+  }
+  
+
+  
+  /* LINKS */
+  .link {
+    padding: 50px;
+  }
+  
+  .sub-links ul {
+    list-style: none;
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .sub-links a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+  .sub-links a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+  }
+  
+  .logos a{
+    padding: 10px;
+  }
+  
+  .logo {
+    color: var(--dark);
+  }
+  
+  
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+  }
+  
+  /* MEDIA QUERIES */
+
+  @media(max-width: 900px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+  
+  }
+  
+  @media(max-width: 700px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+  
+    .sub-links ul {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+     
+  }
+  
+  @media(max-width: 500px) {
+  
+    .wrapper {
+      font-size: 15px;
+    }
+  
+    header {
+      margin: 0;
+      padding: 20px 0 0 0;
+      position: static;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: 
+      "nt"    
+      "mn"
+      "sb";
+      text-align: center;
+    }
+  
+    .netflixLogo {
+      max-width: 100%;
+      margin: auto;
+      padding-right: 20px;
+    }
+  
+    .main-nav {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 18px;
+    }
+  
+   
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;    
+    }
+  
+    .box a:hover {
+      transition: transform .3s;
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);  
+      transform: scale(1.2);
+    }
+  
+    .logos {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  
+    .sub-links ul {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    
+  
+    
+     
+  }
+
+
+

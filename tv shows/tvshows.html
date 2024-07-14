@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TV Shows </title>
     <link rel="stylesheet" href="/tv shows/tvshows_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="/Home folder/assets/netflix_favicon.ico" rel="icon" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- header tag ---navbar -->
     <div class="header">
         <nav style="background: transparent;">
-            <img src="/Assets/images/logo.png" alt="logo" class="logo">
+            <img src="/Log in page folder/Assets/images/logo.png" alt="logo" class="logo">
             <div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">TV Shows</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">New & Popular</a></li>
-                    <li><a href="#">My List</a></li>
-                    <li><a href="#">Browse by Language</a></li>
+                    <li><a href="/Home folder/Home.html" >Home</a></li>
+                    <li><a href="/tv shows/tvshows.html" >Tv shows</a></li>
+                    <li><a href="/Home folder/Home.html" >Movies</a></li>
+                    <li><a href="#" >New & Popular</a></li>
+                    <li><a href="/My List/MyList.html" >My List</a></li>
+                    <li><a href="#" >Browse by Language</a></li>
+                
 
                     <div class="nav-right">
                         <div class="search-container">
@@ -39,15 +43,15 @@
                 </ul>
             </div>
         </nav>
-    </div>
 
+    </div>
+    <!-- end of header nav bar -->
+
+    <!-- tv shows content , genres -->
     <div class="tvshows_header">
         <div><strong>TV Shows</strong></div>
-
-
-
         <div class="dropdown">
-            <button class="genres-btn">Genres<img src="/Assets/images/down-icon.png" class="dropdown-icon"></button>
+            <button class="genres-btn">Genres<img src="/Log in page folder/Assets/images/down-icon.png" class="dropdown-icon"></button>
             <div class="dropdown-content">
                 <ul>
                     <li>For Bridgerton Fans</li>
@@ -56,7 +60,7 @@
                     <li>British</li>
                     <li>European</li>
                     <li>Asian</li>
-                    <li>Reality & Talk</li>
+                    <!-- <li>Reality & Talk</li>
                     <li>Action</li>
                     <li>Dramas</li>
                     <li>Comedies</li>
@@ -72,16 +76,15 @@
                     <li>Teen</li>
                     <li>Anime</li>
                     <li>Science & Nature</li>
-                    <li>Food & Travel</li>
+                    <li>Food & Travel</li> -->
                 </ul>
             </div>
         </div>
-
     </div>
 
     <div class="video-container">
-        <video autoplay muted loop id="background-video">
-            <source src="/Money Heist _ Series Trailer _ Netflix.mp4" type="video/mp4">
+        <video class="video-2" autoplay playsinline muted loop>
+            <source src="/tv shows/assets/Money Heist _ Series Trailer _ Netflix.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
     </div>
@@ -89,20 +92,21 @@
     <div class="class-content">
         <div class="text-area">
             <div style="display: inline-flex;">
-                <div><img src="/tv shows/assets/netflix-logo.png" alt="icon" class="netflix-logo"></div>
+                <div style="align-items: center; margin: 15px;"><img src="/tv shows/assets/netflix-logo.png" alt="icon"
+                        class="netflix-logo"></div>
                 <div style="align-items: center; margin: 15px;">
                     <h4>Series</h4>
                 </div>
             </div>
-            <h2 class="text-area-title">MONEY HEIST</h2>
+            <div style=" margin: 15px;"><img src="/tv shows/assets/Money-heist-title1.jpg" alt="Money-heist-title"
+                    class="text-area-title"></div>
             <h4 class="text-area">Drama Horror Action Family - 2h 28m</h4>
             <h5 class="text-area">Eight thieves take hostages and lock themselves <br>in the Royal Mint of Spain as
                 a criminal mastermind <br> manipulates the police to carry out his plan.</h5>
             <div style="padding-left:20px;"></div>
             <div class="buttons">
-                <div class="play-btn"><a href="#playbtn"> <i class="fa-solid fa-play"></i> Play</a></div>
-                <div style="padding-left:20px;"></div>
-                <div class="info-btn"><a href=" #infobtn"><i class="fa fa-info-circle" aria-hidden="true"></i> More
+                <div class="play-btn"><a href="#playbtn"><i class="fa-solid fa-play"></i> Play</a></div>
+                <div class="info-btn"><a href="#infobtn"><i class="fa fa-info-circle" aria-hidden="true"></i> More
                         Info</a></div>
             </div>
         </div>
@@ -111,1034 +115,674 @@
 
     <!-- cards tv shows -->
     <div id="black-background">
-    <h2 class="section-title">TV Shows</h2>
+        <h2 class="section-title">TV Shows</h2>
 
-    <div class="media-container">
-        <div class="media-scroller">
+        <div class="media-container">
+            <div class="media-scroller">
 
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
+                <!--   Group 1 -->
+                <div class="media-group" id="group-1">
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/blood honors.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/alice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/cursed.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/heeramandi.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/kunfu-panda.jpg" alt="">
+                    </div>
+
+                    <a class="next" href="#group-2" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
                 </div>
 
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
+                <!-- Group 2   -->
+                <div class="media-group" id="group-2">
+                    <a class="previous" href="#group-1">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/furies.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/misson rangaraj.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/jawan.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/young justice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/valhensing.png" alt="">
+                    </div>
+                    <a class="next" href="#group-3" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Group 3   -->
+                <div class="media-group" id="group-3">
+                    <a class="previous" href="#group-2">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/kot factory.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/money-heist.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/young justice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/fate.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/furies.png" alt="">
+                    </div>
+                    <a class="next" href="#group-4" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!--  Group 4  -->
+                <div class="media-group" id="group-4">
+                    <a class="previous" href="#group-3">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/ghost.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/lucifer.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/umbrella-academy.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/adhipurush.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/vikings.png" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation-indicators">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
         </div>
-    </div>
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <svg>
-        <symbol id="next" viewBox="0 0 256 512">
-            <path fill="white"
-                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-        </symbol>
-
-        <symbol id="previous" viewBox="0 0 256 512">
-            <path fill="white"
-                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
-        </symbol>
-    </svg>
-
-
-
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <!-- cards tv shows -->
-    <h2 class="section-title">TV Shows</h2>
-
-    <div class="media-container">
-        <div class="media-scroller">
-
-            <!--   Group 1 -->
-            <div class="media-group" id="group-1">
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-
-                <a class="next" href="#group-2" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 2   -->
-            <div class="media-group" id="group-2">
-                <a class="previous" href="#group-1">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-3" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Group 3   -->
-            <div class="media-group" id="group-3">
-                <a class="previous" href="#group-2">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <a class="next" href="#group-4" aria-label="next">
-                    <svg>
-                        <use href="#next"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <!--  Group 4  -->
-            <div class="media-group" id="group-4">
-                <a class="previous" href="#group-3">
-                    <svg>
-                        <use href="#previous"></use>
-                    </svg>
-                </a>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-                <div class="media-element">
-                    <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="navigation-indicators">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-    </div>
-
 </div>
+    <!-- cards tv shows -->
+    <div id="black-background">
+        <h2 class="section-title">K-Dramas</h2>
+
+        <div class="media-container">
+            <div class="media-scroller">
+
+                <!--   Group 1 -->
+                <div class="media-group" id="group-1">
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/business proposal.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/all of us dead.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/do bong soon.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/crash landing on u.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/nine tailed.png" alt="">
+                    </div>
+
+                    <a class="next" href="#group-2" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Group 2   -->
+                <div class="media-group" id="group-2">
+                    <a class="previous" href="#group-1">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/queen of tears.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/blood honors.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/true beauty.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/vincenzo.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/business proposal.png" alt="">
+                    </div>
+                    <a class="next" href="#group-3" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Group 3   -->
+                <div class="media-group" id="group-3">
+                    <a class="previous" href="#group-2">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/kot factory.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/money-heist.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/young justice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/fate.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/furies.png" alt="">
+                    </div>
+                    <a class="next" href="#group-4" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!--  Group 4  -->
+                <div class="media-group" id="group-4">
+                    <a class="previous" href="#group-3">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/blood honors.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/lucifer.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/umbrella-academy.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/adhipurush.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/vikings.png" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation-indicators">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- cards tv shows -->
+     <div style="background-color: rgb(17, 17, 17);  width: 100%;
+  height: 200vh;">
+    <div id="black-background">
+        <h2 class="section-title">Casual Viewing</h2>
+
+        <div class="media-container">
+            <div class="media-scroller">
+
+                <!--   Group 1 -->
+                <div class="media-group" id="group-1">
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/ben10.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/alice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/cursed.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/heeramandi.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/kunfu-panda.jpg" alt="">
+                    </div>
+
+                    <a class="next" href="#group-2" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Group 2   -->
+                <div class="media-group" id="group-2">
+                    <a class="previous" href="#group-1">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/furies.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/misson rangaraj.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/jawan.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/young justice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/valhensing.png" alt="">
+                    </div>
+                    <a class="next" href="#group-3" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Group 3   -->
+                <div class="media-group" id="group-3">
+                    <a class="previous" href="#group-2">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/kot factory.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/money-heist.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/young justice.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/fate.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/furies.png" alt="">
+                    </div>
+                    <a class="next" href="#group-4" aria-label="next">
+                        <svg>
+                            <use href="#next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!--  Group 4  -->
+                <div class="media-group" id="group-4">
+                    <a class="previous" href="#group-3">
+                        <svg>
+                            <use href="#previous"></use>
+                        </svg>
+                    </a>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/ghost.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/lucifer.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/umbrella-academy.png" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/adhipurush.jpg" alt="">
+                    </div>
+                    <div class="media-element">
+                        <img src="/tv shows/assets/cards/vikings.png" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation-indicators">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+        </div>
+
+    
+</div>
+
+<!-- cards tv shows -->
+<div id="black-background">
+    <h2 class="section-title">Today's top pick's for you</h2>
+
+    <div class="media-container">
+        <div class="media-scroller">
+
+            <!--   Group 1 -->
+            <div class="media-group" id="group-1">
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/blood honors.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/alice.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/cursed.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/heeramandi.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/kunfu-panda.jpg" alt="">
+                </div>
+
+                <a class="next" href="#group-2" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Group 2   -->
+            <div class="media-group" id="group-2">
+                <a class="previous" href="#group-1">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/furies.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/misson rangaraj.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/jawan.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/young justice.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/valhensing.png" alt="">
+                </div>
+                <a class="next" href="#group-3" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Group 3   -->
+            <div class="media-group" id="group-3">
+                <a class="previous" href="#group-2">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/kot factory.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/money-heist.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/young justice.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/fate.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/furies.png" alt="">
+                </div>
+                <a class="next" href="#group-4" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!--  Group 4  -->
+            <div class="media-group" id="group-4">
+                <a class="previous" href="#group-3">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/ghost.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/lucifer.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/umbrella-academy.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/adhipurush.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/vikings.png" alt="">
+                </div>
+            </div>
+
+            <div class="navigation-indicators">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- cards tv shows -->
+<div id="black-background">
+    <h2 class="section-title">Animations</h2>
+
+    <div class="media-container">
+        <div class="media-scroller">
+
+            <!--   Group 1 -->
+            <div class="media-group" id="group-1">
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/kunfu panda 2.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/ben10.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/cursed.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/heeramandi.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/kunfu-panda.jpg" alt="">
+                </div>
+
+                <a class="next" href="#group-2" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Group 2   -->
+            <div class="media-group" id="group-2">
+                <a class="previous" href="#group-1">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/furies.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/misson rangaraj.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/jawan.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/young justice.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/valhensing.png" alt="">
+                </div>
+                <a class="next" href="#group-3" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Group 3   -->
+            <div class="media-group" id="group-3">
+                <a class="previous" href="#group-2">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/kot factory.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/money-heist.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/young justice.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/fate.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/furies.png" alt="">
+                </div>
+                <a class="next" href="#group-4" aria-label="next">
+                    <svg>
+                        <use href="#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!--  Group 4  -->
+            <div class="media-group" id="group-4">
+                <a class="previous" href="#group-3">
+                    <svg>
+                        <use href="#previous"></use>
+                    </svg>
+                </a>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/ghost.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/lucifer.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/umbrella-academy.png" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/adhipurush.jpg" alt="">
+                </div>
+                <div class="media-element">
+                    <img src="/tv shows/assets/cards/vikings.png" alt="">
+                </div>
+            </div>
+
+            <div class="navigation-indicators">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<svg>
+    <symbol id="next" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </symbol>
+
+    <symbol id="previous" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </symbol>
+  </svg>
+    <footer style="background-color: rgb(8, 8, 8); margin: 0%;">
+    <section class="link">
+        <div class="logos">
+          <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+        </div>
+        <div class="sub-links">
+          <ul>
+            <li><a href="#">Audio and Subtitles</a></li>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- END OF LINKS -->
+  
+      <!-- FOOTER -->
+      
+        <p>&copy 1997-2018 Netflix, Inc.</p>
+        <p>Carlos Avila &copy 2018</p>
+      </footer>
+    
 </body>
 
 </html>
