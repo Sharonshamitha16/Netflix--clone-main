@@ -150,9 +150,9 @@ strong {
   align-items: center;
   /* justify-content: space-between; */
   padding: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url(Assets/images/header-image.png);
-  position: fixed;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), */
+      /* rgba(0, 0, 0, 0.7)), url(Assets/images/header-image.png); */
+  /* position: fixed; */
 }
 
 .genres-btn {
