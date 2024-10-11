@@ -3,89 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/My List/MyList.css">
+    <title>My List</title>
+    <link rel="stylesheet" href="MyList.css">
+    <link href="/Home folder/assets/netflix_favicon.ico" rel="icon" type="image/x-icon">
+
 </head>
 <body>
     <div class="header">
-        <nav>
-            <img src="/assets/logo.png" alt="logo" class="logo">
-        <div>
-            <ul>
-                <li><a href="/Home folder/Home.html" >Home</a></li>
-                <li><a href="/tv shows/tvshows.html" >Tv shows</a></li>
-                <li><a href="/Home folder/Home.html" >Movies</a></li>
-                <li><a href="#" >New & Popular</a></li>
-                <li><a href="/My List/MyList.html" >My List</a></li>
-                <li><a href="#" >Browse by Language</a></li>
-            
-            
+        <nav style="background: transparent;">
+            <a href='../Log in page folder/index.html'><img src="assets/logo.png" alt="logo" class="logo"></a>        
+                <div>
+                <ul>
+                    <li><a href="/Home folder/Home.html">Home</a></li>
+                    <li><a href="/tv shows/tvshows.html">Tv shows</a></li>
+                    <li><a href="/Movies/movies.html" >Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="/My List/MyList.html">My List</a></li>
+                    <li><a href="#">Browse by Language</a></li>
+                </ul>
+            </div>
             <div class="nav-right">
-                <img src="assets/search_icon.svg" alt="search icon" class="icon search1"><input type="search" id="search" placeholder="Title, people, genres"> 
-                <p>Children</p>
-                <img src="assets/bell_icon.svg" alt="bell icon" class="icon" title=" Your favourite">
+                <div class="search-container">
+                    <button class="search-icon"><img src="/tv shows/assets/search_icon.svg" alt="search icon"
+                            class="icon_search1"></button>
+                    <input type="text" id="search-input" placeholder="Title, people, genres">
+                </div>
+                <p style="color:antiquewhite ">Children</p>
+                <img src="/tv shows/assets/bell_icon.svg" alt="bell icon" class="bell-icon" title="Your favourite">
                 <div class="navbar-profile">
-                    <img src="assets/profile_img.png" alt="profil" class="profile">
-                    <img src="assets/caret_icon.svg" alt="assets" class="dropdown">
-                        <li class="sign-out"><a href="/Log in page folder/index.html">Sign out</a></li>
-                    
+                    <img src="/tv shows/assets/profile_img.png" alt="profile" class="profile">
+                    <img src="/tv shows/assets/caret_icon.svg" alt="caret icon" class="caret_icon">
                 </div>
             </div>
-                   
-            </ul>
-            <div class="MyList">
-                <h1>My&nbsp;List</h1>
-            </div>
-    
-
-        </div>
         </nav>
-
-        
-        <div class="firstline">
-         
-                   <img class="img1" src="img/Hulk.jpeg" alt="Hulk">
-                   <img class="img1" src="img/lallorona.jpeg" alt="lallorona">
-                   <img class="img1" src="img/Scrream.jpeg" alt="sccream">
-                   <img class="img1" src="img/stranger things.jpeg" alt="stranger things">
-                   <img class="img1" src="img/Black Adam.jpeg" alt="Black Adam">
-                   <img class="img1" src="img/luther.jpeg" alt="luther">
-                   <img class="img1" src="img/Venom.jpeg" alt="Venom">
-                    <img class="img1" src="img/maratal kombat.jpeg" alt="maratal kombat">
-                    <img class="img1" src="img/spiderman.jpeg" alt="spiderman">
-        </div>
-        <br>
-
-
-        <div class="secondline">
-         
-                    <img class="img1" src="img/Adam project.jpg" alt="Adam project">
-                    <img class="img1" src="img/CODE 8.jpg" alt="CODE 8.">
-                    <img class="img1" src="img/dead boy detuctives.jpg" alt="dead boy detuctives">
-                    <img class="img1" src="img/Dragon 2" alt="Dragon 2">
-                    <img class="img1" src="img/journey 2.jpeg" alt="journey 2">
-                    <img class="img1" src="img/MIB.jpeg" alt="MIB">
-                    <img class="img1" src="img/blind.jpeg" alt="Blind">
-                     <img class="img1" src="img/DON.jpeg" alt="DON">
-                     <img class="img1" src="img/Escape Room.jpeg" alt="Escape room">
-            </div>
-            <br>
-
-
-
-            <div class="thirdline">
-         
-                    <img class="img1" src="img/charlie.jpeg" alt="charlie">
-                    <img class="img1" src="img/Extraction.jpg" alt="Extraction">
-                    <img class="img1" src="img/Game over.jpeg" alt="Game over">
-                    <img class="img1" src="img/Gordzila.jpeg" alt="Gordzila">
-                    <img class="img1" src="img/kufunga.jpeg" alt="kufunga">
-                    <img class="img1" src="img/madeweb.jpeg" alt="luther">
-                    <img class="img1" src="img/Saithan.jpeg" alt="Venom">
-                     <img class="img1" src="img/Slumberland.jpg" alt="maratal kombat">
-                     <img class="img1" src="img/TopGun.jpeg" alt="spiderman">
-         </div>
-        
     </div>
+
+    <div class="MyList">
+        <h1>My List</h1>
+    </div>
+
+    <div class="image-grid">
+        <img src="img/Hulk.jpeg" alt="Hulk">
+        <img src="img/lallorona.jpeg" alt="lallorona">
+        <img src="img/Scrream.jpeg" alt="sccream">
+        <img src="img/stranger things.jpeg" alt="stranger things">
+        <img src="img/Black Adam.jpeg" alt="Black Adam">
+        <img src="img/luther.jpeg" alt="luther">
+        <img src="img/Venom.jpeg" alt="Venom">
+        <img src="img/maratal kombat.jpeg" alt="maratal kombat">
+        <img src="img/spiderman.jpeg" alt="spiderman">
+        <img src="img/Adam project.jpg" alt="Adam project">
+        <img src="img/CODE 8.jpg" alt="CODE 8.">
+        <img src="img/dead boy detuctives.jpg" alt="dead boy detuctives">
+        <img src="img/Dragon 2" alt="Dragon 2">
+        <img src="img/journey 2.jpeg" alt="journey 2">
+        <img src="img/MIB.jpeg" alt="MIB">
+        <img src="img/blind.jpeg" alt="Blind">
+        <img src="img/DON.jpeg" alt="DON">
+        <img src="img/Escape Room.jpeg" alt="Escape room">
+        <img src="img/charlie.jpeg" alt="charlie">
+        <img src="img/Extraction.jpg" alt="Extraction">
+        <img src="img/Game over.jpeg" alt="Game over">
+        <img src="img/Gordzila.jpeg" alt="Gordzila">
+        <img src="img/kufunga.jpeg" alt="kufunga">
+        <img src="img/madeweb.jpeg" alt="luther">
+        <img src="img/Saithan.jpeg" alt="Venom">
+        <img src="img/Slumberland.jpg" alt="maratal kombat">
+        <img src="img/TopGun.jpeg" alt="spiderman">
+    </div>
+     <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class="link">
+        <div class="logos">
+          <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+        </div>
+        <div class="sub-links">
+          <ul>
+            <li><a href="#">Audio and Subtitles</a></li>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- END OF LINKS -->
+  
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy 1997-2018 Netflix, Inc.</p>
+        <p>Carlos Avila &copy 2018</p>
+      </footer>
 </body>
 </html>

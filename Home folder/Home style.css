@@ -135,7 +135,7 @@ li a:hover{
 .banner-button{
     display: inline;
     cursor: pointer;
-    color: #fff;
+    color: rgb(53, 43, 43);
     outline: none;
     border: none;
     font-weight: 700;
@@ -145,11 +145,10 @@ li a:hover{
     margin-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(51,51,51,0.5);
 }
 
 .banner-button:hover{
-    color: #000;
+    color: rgb(220, 195, 195);
     transition: all 0.25;
 }
 

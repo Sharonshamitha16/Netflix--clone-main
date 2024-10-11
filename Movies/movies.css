@@ -9,7 +9,7 @@
 
 /* Footer icons */
 :root {
-    --primary: #141414;
+    --primary: #090909;
     --light: #F3F3F3;
     --dark: 	#686868;
 }
@@ -84,6 +84,7 @@ li a:hover{
     border-radius: 5px;
 }
 
+
 .dropdown{
     padding: 10px;
 }
@@ -100,7 +101,7 @@ li a:hover{
 /* -- banner style -- */
 
 .banner{
-    background-image: url(banner/banner.jpg) ;
+    background-image: url(banner/hero_banner.jpg) ;
     background-size: cover;
     background-position: center center;
     color: white;
@@ -135,7 +136,7 @@ li a:hover{
 .banner-button{
     display: inline;
     cursor: pointer;
-    color: #fff;
+    color: rgb(17, 17, 17);
     outline: none;
     border: none;
     font-weight: 700;
@@ -145,11 +146,10 @@ li a:hover{
     margin-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(51,51,51,0.5);
 }
 
 .banner-button:hover{
-    color: #000;
+    color: rgb(226, 214, 214);
     transition: all 0.25;
 }
 
